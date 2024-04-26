@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sticker Maker</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container mx-auto p-4">
+    <h1 class="text-3xl font-bold mb-4">Sticker Maker</h1>
+    <!-- Input Fields -->
+    <form id="stickerForm" class="mb-8">
+      <div class="grid grid-cols-2 gap-4">
+        <div>
+          <label for="productCode">Product Code:</label>
+          <input type="text" id="productCode" name="productCode" class="input-field">
+        </div>
+        <div>
+          <label for="productName">Product Name:</label>
+          <input type="text" id="productName" name="productName" class="input-field">
+        </div>
+        <div>
+          <label for="expiry">Expiry Date:</label>
+          <input type="date" id="expiry" name="expiry" class="input-field">
+        </div>
+        <div>
+          <label for="mrp">Maximum Retail Price (MRP):</label>
+          <input type="number" id="mrp" name="mrp" class="input-field">
+        </div>
+        <div>
+          <label for="contact">Contact:</label>
+          <input type="text" id="contact" name="contact" class="input-field">
+        </div>
+      </div>
+      <button type="submit" class="btn-primary">Save Sticker</button>
+    </form>
+    <!-- Sticker Display -->
+    <div id="stickerDisplay"></div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
